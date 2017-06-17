@@ -11,9 +11,6 @@
     
     <h1 class="text-center">To Do List</h1>
 
-    <div id="MensagemView"></div>
-
-    <div id="NegociacoesView"></div>
 
     <form class="form" onsubmit="controllerToDo.addToDo(event)">
         
@@ -32,21 +29,22 @@
             <input type="date" id="date" class="form-control" required/>        
         </div>    
               
-        <button class="btn btn-primary" type="submit">Add Task</button>
-    </form>
-    
-    <div class="text-center">
+        <button class="btn btn-primary" type="submit" >Add Task</button>
         <button class="btn btn-primary text-center" type="button">
             Clean Up
         </button>
-    </div> 
+    </form>
+
     <br>
+    <div id="viewToDo"></div>    
     
     <script src="js/app/models/Task.js"></script>
+    <script src="js/app/helpers/DateHelper.js"></script>
+    <script src="js/app/views/ViewToDo.js"></script>
     <script src="js/app/controllers/ControllerToDo.js"></script>
     
     <script>
         let controllerToDo = new ControllerToDo();
     </script>
 </body>
-</html>
+</html> 

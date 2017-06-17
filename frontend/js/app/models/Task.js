@@ -15,8 +15,6 @@ class Task {
     }
 
     get date(){
-        return new Date(this._date.getTime());
+        return new Date(this._date);
     }
-
-
 }
