@@ -31,5 +31,4 @@ class ViewToDo {
         this._element.innerHTML =  this._template(model);
     }
 
-
 }
